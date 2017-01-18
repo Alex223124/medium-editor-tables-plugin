@@ -1,10 +1,10 @@
-# Markdown Plugin for Rails
+# Tables Plugin for Rails
 
-This gem integrates [Medium Editor Markdown Plugin](https://github.com/IonicaBizau/medium-editor-markdown) with Rails asset pipeline.
+This gem integrates [Medium Editor Tables Plugin](https://github.com/yabwe/medium-editor-tables) with Rails asset pipeline.
 
 ## Version
 
-The latest version of plugin bundled by this gem is [v2.6.1](https://github.com/IonicaBizau/medium-editor-markdown)
+The latest version of plugin bundled by this gem is [v0.6.1](https://github.com/yabwe/medium-editor-tables)
 
 ## Installation
 
@@ -19,7 +19,7 @@ And then execute:
 
 ```bash
 bundle install
-bundle exec rake markdown_plugin:update
+bundle exec rake tables_plugin:update
 ```
 
 ## Configuration
@@ -28,27 +28,37 @@ Include javascript file in **app/assets/javascripts/application.js**:
 
 ```javascript
 //= require medium-editor
-//= require medium-editor-markdown-plugin
+//= require medium-editor-tables-plugin
+```
+
+Include stylesheet file in **app/assets/stylesheets/application.css**:
+
+```css
+*= require medium-editor/medium-editor
+*= require medium-editor/themes/flat
+*= require medium-editor-tables-plugin
 ```
 
 ## Using plugin with Medium Editor
 
-Initialize Medium Editor and add Markdown Plugin inside configuration:
+Initialize Medium Editor and add Tables Plugin inside configuration:
 
 ```html
 <div class="editable"></div>
-<div class="markdown">
-  <pre></pre>
-</div>
 
 <script>
   $(document).ready(function(){
-    var markdown = $(".markdown pre");
     var editor = new MediumEditor('.editable', {
+      buttonLabels: 'fontawesome',
+      toolbar: {
+        buttons: [
+          'bold',
+          'italic',
+          'table'
+        ]
+      },
       extensions: {
-        markdown: new MeMarkdown(function (md) {
-          markdown.html(md);
-        })
+        table: new MediumEditorTable()
       }
     });
   });
