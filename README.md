@@ -34,9 +34,11 @@ Include javascript file in **app/assets/javascripts/application.js**:
 Include stylesheet file in **app/assets/stylesheets/application.css**:
 
 ```css
+/*
 *= require medium-editor/medium-editor
 *= require medium-editor/themes/flat
 *= require medium-editor-tables-plugin
+*/
 ```
 
 ## Using plugin with Medium Editor
