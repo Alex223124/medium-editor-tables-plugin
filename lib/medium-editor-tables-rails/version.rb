@@ -1,5 +1,3 @@
 module MediumEditorTablesRails
-  module Rails
-    VERSION = '0.0.1'
-  end
+  VERSION = '0.0.1'
 end
