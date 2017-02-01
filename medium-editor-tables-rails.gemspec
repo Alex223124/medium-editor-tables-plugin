@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'railties', '>= 4.0'
   gem.add_dependency 'rails'
-  gem.add_dependency 'medium-editor-engine'
+  gem.add_dependency 'medium-editor'
   gem.add_development_dependency 'bundler', '~> 1.0'
 end
 

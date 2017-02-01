@@ -1,1 +1,1 @@
-//=require medium-editor-tables/medium-editor-tables.min
+//= require medium-editor-tables/medium-editor-tables.min

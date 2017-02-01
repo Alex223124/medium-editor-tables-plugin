@@ -1,0 +1,22 @@
+{
+  "name": "medium-editor-tables-rails",
+  "authors": [
+    "mwlang <mwlang@cybrains.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "medium-editor": "^5.22.2",
+    "medium-editor-tables": "^0.6.1"
+  }
+}

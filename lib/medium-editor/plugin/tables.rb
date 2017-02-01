@@ -1,8 +1,8 @@
-require 'medium-editor-engine/plugin/base'
+require 'medium-editor/plugin/base'
 
-module MediumEditorEngine
+module MediumEditor
   module Plugin
-    class Tables < ::MediumEditorEngine::Plugin::Base
+    class Tables < ::MediumEditor::Plugin::Base
       def self.javascripts
         ["medium-editor-tables-plugin"]
       end
