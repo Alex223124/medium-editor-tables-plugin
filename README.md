@@ -8,18 +8,11 @@ The latest version of plugin bundled by this gem is [v0.6.1](https://github.com/
 
 ## Installation
 
-Include **medium-editor-tables-rails** in your Rails project's Gemfile:
+Include **medium-editor-tables-plugin** in your Rails project's Gemfile:
 
 ```ruby
-gem 'medium-editor-rails'
-gem 'medium-editor-tables-rails'
-```
-
-And then execute:
-
-```bash
-bundle install
-bundle exec rake tables_plugin:update
+gem 'medium-editor'
+gem 'medium-editor-tables-plugin'
 ```
 
 ## Configuration
@@ -35,8 +28,7 @@ Include stylesheet file in **app/assets/stylesheets/application.css**:
 
 ```css
 /*
-*= require medium-editor/medium-editor
-*= require medium-editor/themes/flat
+*= require medium-editor
 *= require medium-editor-tables-plugin
 */
 ```
@@ -69,7 +61,7 @@ Initialize Medium Editor and add Tables Plugin inside configuration:
 
 ## Contributing
 
-1. Fork it ( https://github.com/mwlang/medium-editor-tables-rails/fork )
+1. Fork it ( https://github.com/mwlang/medium-editor-tables-plugin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
